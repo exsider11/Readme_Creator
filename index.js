@@ -139,7 +139,7 @@ function writeToFile(fileName, data) {
         badge = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
     }
     fs.appendFile(`${fileName}.md`,
-    `#Table of Conents\n##installation\n##usage\n##licenses\n##contributors\n##tests\n##questions\n#Installation processes\n##${data.installation}\n#Useage of project\n##${data.usage}\n#Licenses used\n##${data.licenses}${licenseIcon(data.licenses)}\n###Licence Link${licenseLink(data.licenses)}\n#Contributors\n##${data.contributors}\n#Test Done\n##${data.tests}\n#Questions\n##${data.questions}\n##If you have any more questions contact me at\n###${data.githubName}\n###${data.email}`
+    `# Table of Conents\n## installation\n## usage\n## licenses\n## contributors\n## tests\n## questions\n# Installation processes\n## ${data.installation}\n# Useage of project\n## ${data.usage}\n# Licenses used\n## ${data.licenses}${licenseIcon(data.licenses)}\n### Licence Link${licenseLink(data.licenses)}\n# Contributors\n## ${data.contributors}\n# Test Done\n## ${data.tests}\n# Questions\n## ${data.questions}\n## If you have any more questions contact me at\n### ${data.githubName}\n### ${data.email}`
     , (err) =>
     err ? console.error(err) : console.log('README.md Made!'))
 }
